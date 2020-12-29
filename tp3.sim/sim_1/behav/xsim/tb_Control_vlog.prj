@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tp3.srcs/sim_1/new/Control/Control.v" \
+"../../../../tp3.srcs/sim_1/new/Control/Instruction_Decoder.v" \
+"../../../../tp3.srcs/sim_1/new/Control/PC.v" \
+"../../../../tp3.srcs/sim_1/new/Control/PC_Adder.v" \
+"../../../../tp3.srcs/sim_1/new/Program_Memory.v" \
+"../../../../tp3.srcs/sim_1/new/Control/tb_Control.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

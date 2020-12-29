@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tp3.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../tp3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../tp3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/ACC.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/Arithmetic_Unit.v" \
+"../../../../tp3.srcs/sim_1/new/CPU.v" \
+"../../../../tp3.srcs/sim_1/new/Control/Control.v" \
+"../../../../tp3.srcs/sim_1/new/Data_Memory.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath.v" \
+"../../../../tp3.srcs/sim_1/new/Control/Instruction_Decoder.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/MuxA.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/MuxB.v" \
+"../../../../tp3.srcs/sim_1/new/Control/PC.v" \
+"../../../../tp3.srcs/sim_1/new/Control/PC_Adder.v" \
+"../../../../tp3.srcs/sim_1/new/Program_Memory.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/Signal_Extension.v" \
+"../../../../tp3.srcs/sim_1/new/Uart/baudRateGenerator.v" \
+"../../../../tp3.srcs/sim_1/new/Uart/rx.v" \
+"../../../../tp3.srcs/sim_1/new/top.v" \
+"../../../../tp3.srcs/sim_1/new/Uart/tx.v" \
+"../../../../tp3.srcs/sim_1/new/Uart/uart.v" \
+"../../../../tp3.srcs/sim_1/new/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tp3.srcs/sim_1/new/Datapath/ACC.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/Arithmetic_Unit.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/MuxA.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/MuxB.v" \
+"../../../../tp3.srcs/sim_1/new/Datapath/Signal_Extension.v" \
+"../../../../tp3.srcs/sim_1/new/tb_Datapath.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
